@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sam Hospital</title>
+    <style>
+        body, html {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            background-image:url('/static/images/bot.jpg');
+            background-size:cover;
+            background-position:center;
+            background-attachment:fixed;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 50px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            background: rgba(200, 200, 200, 0.5);
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            position: relative;
+            margin-top:50px;
+        }
+        .header {
+            padding: 20px;
+            background: #007bff;
+            color: #ffffff;
+            text-align: center;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            margin-bottom: 80px; /* Ensure there's space for the fixed form at the bottom */
+        }
+        .form {
+            padding: 20px;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .form input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .form input[type="submit"],
+        .form button[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            background: #007bff;
+            color: #ffffff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form button[type="submit"] {
+            background: transparent;
+            padding: 0;
+        }
+        .form button[type="submit"] img {
+            width: 24px;
+            height: 24px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 15px;
+        }
+        #query{
+            width:350px;
+            height:18px;
+            font-size:18px;
+        }
+        .refresh:hover{
+            background-color:white;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #3498db;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+        }
+
+        a:active {
+            background-color: #1c5980;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            a {
+                padding: 8px 16px;
+            }
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            position: sticky; /* Position it absolutely */
+            top: 10px; /* Adjust the distance from the top */
+            left: 0; /* Align it to the left */
+            width: 100%; /* Full width */
+            background-color: transparent; /* Remove the background color */
+            display: flex; /* Flexbox for alignment */
+            justify-content: center; /* Center items horizontally */
+            padding: 10px 0; /* Padding around the navbar items */
+            box-shadow: none; /* Remove shadow */
+            z-index: 10; /* Ensure it stays on top */
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff; /* White color for navbar links */
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px; /* Space between navbar links */
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Slightly white background on hover */
+            color: #fff; /* Keep text color white */
+        }
+
+        .navbar a:active {
+            background-color: rgba(255, 255, 255, 0.3); /* Slightly darker background on active */
+            color: #fff; /* Keep text color white */
+        }
+    
+    .footer {
+        background-color: #3498db;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        margin-bottom:-180px;
+    }
+
+    .footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+    .loginlogo{
+        width: 110px; /* Set width to a smaller size */
+        height: auto; /* Maintain aspect ratio */
+        display: block;
+
+    }
+
+    .logo {
+        position: absolute; /* Position it absolutely */
+        top: 7px; /* Adjust the distance from the top */
+        left: 7px; /* Adjust the distance from the left */
+    }
+
+    .logo img {
+        width: 80px; /* Set width to a smaller size */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove any extra space below the image */
+    }
+    .botinfo{
+        margin-right:400px;
+        font-size:18px;
+        line-height:1.5em;
+        margin-top:-630px;
+        font-weight:bold;
+        margin-left:40px;
+       
+    }
+    .logo {
+        position: absolute; /* Position it absolutely */
+        top: 7px; /* Adjust the distance from the top */
+        left: 7px; /* Adjust the distance from the left */
+    }
+
+    .logo img {
+        width: 80px; /* Set width to a smaller size */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove any extra space below the image */
+    }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="http://127.0.0.1:5000/">Home</a>
+        <a href="http://127.0.0.1:5000/aboutus">About Us</a>
+        <a href="http://127.0.0.1:5000//book_appointment">Book Appointment</a>
+    </div>
+
+    <div class='logo'>
+        <a href="http://127.0.0.1:5000/">
+        <img src="/static/images/Samlogo.png" alt="Sam Logo">
+        </a>
+    </div>
+
+
+    <div class='container'>
+        <div class="header">
+            <h1>SammyAI</h1>
+        </div>
+        <div class="content">
+            {% if history %}
+                <h2>Query History:</h2>
+                <ul>
+                    {% for item in history %}
+                        <li>
+                            <strong>You:</strong> {{ item.query }}<br>
+                            <strong>Assistant:</strong> {{ item.response }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+        <div class="form">
+            <form method="post">
+                <label for="query"><strong>You:</strong></label>
+                <input type="text" id="query" name="query" placeholder="Enter Your Question Here" required>
+                <input type="submit" value="Send">
+            </form>
+            <form method="post" action="/clear" class='refresh'>
+                <button type="submit">
+                    <img src="/static/images/refresh.png">
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <ul type = 'disk' class = "botinfo">
+        <li>1.If have any problem regarding appointment<br> booking just take the help of our <br>AI Assistant(SammyAI)</li>
+        <li>2.Have any information issues about hospital <br>just ask to th SammyAI(An helpfull Assistant)</li>
+        <li>3.If you want to know the todays present <br>or absent Doctors or reviews of doctors<br> just ask to our SammyAI</li>
+        <li>4.If you had Address issue of our hospital <br>our AI agent will help just ask to SammyAI</li>
+        <li>5.Any of hospital related issues <br>then ask to SammyAI</li>
+    </ul>
+
+
+    <div class="footer">
+        <p>&copy; 2024 Sam Hospital. All rights reserved.</p>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('login') }}">Doctor Login</a>
+        <a href="{{ url_for('book_appointment') }}">Book Appointment</a>
+    </div>
+</body>
+</html>

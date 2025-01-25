@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Hospital</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background-image: url('/static/images/Login background.jpg');
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the image */
+            background-attachment: fixed; /* Keep the image fixed while scrolling */
+            background-repeat: no-repeat; /* Prevent image repetition */
+            position: relative; /* To allow absolute positioning of child elements */
+        }
+
+        .container {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-left:50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #3498db;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+        }
+
+        a:active {
+            background-color: #1c5980;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            a {
+                padding: 8px 16px;
+            }
+        }
+
+        .logo {
+            position: absolute; /* Position it absolutely */
+            top: 7px; /* Adjust the distance from the top */
+            left: 7px; /* Adjust the distance from the left */
+        }
+
+        .logo img {
+            width: 80px; /* Set width to a smaller size */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove any extra space below the image */
+        }
+
+        .Dr2 {
+            margin-left: 300px;
+            margin-top: 80px;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            position: absolute; /* Position it absolutely */
+            top: 10px; /* Adjust the distance from the top */
+            left: 0; /* Align it to the left */
+            width: 100%; /* Full width */
+            background-color: transparent; /* Remove the background color */
+            display: flex; /* Flexbox for alignment */
+            justify-content: center; /* Center items horizontally */
+            padding: 10px 0; /* Padding around the navbar items */
+            box-shadow: none; /* Remove shadow */
+            z-index: 10; /* Ensure it stays on top */
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff; /* White color for navbar links */
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px; /* Space between navbar links */
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Slightly white background on hover */
+            color: #fff; /* Keep text color white */
+        }
+
+        .navbar a:active {
+            background-color: rgba(255, 255, 255, 0.3); /* Slightly darker background on active */
+            color: #fff; /* Keep text color white */
+        }
+        .info-row{
+            border:solid 2px red;
+            margin-top:600px;
+            padding-right:200px;
+            
+        }
+        .footer {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .list{
+            font-size:30px;
+            line-height:1.7em;
+            font-weight:bold;
+            margin-left:100px;
+            margin-right:-200px;
+        }
+        h1{
+            border-bottom:solid black 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="http://127.0.0.1:5000/">Home</a>
+        <a href="http://127.0.0.1:5000/aboutus">About Us</a>
+        <a href="http://127.0.0.1:5000/sammyai">SammyAI</a><strong>:- An helpfull Assistant Ready To Assist You</strong>
+    </div>
+    <div class='logo'>
+        <a href="http://127.0.0.1:5000/">
+        <img src="/static/images/Samlogo.png" alt="Sam Logo">
+        </a>
+    </div>
+
+    <div class="container">
+        <h1>Sam Hospital</h1>
+        <a href="{{ url_for('login') }}">Doctor Login</a>
+        <a href="{{ url_for('book_appointment') }}">Book Appointment</a>
+    </div>
+
+    <ul type='disk' class='list'>
+        <li>100,000+ Peoples Treated.</li>
+        <li>Worlds Best Doctor's Team.</li>
+        <li>Awarded for Best Service.</li>
+    </ul>
+
+
+
+    <div class='Dr2'>
+        <img src='/static/images/Dr2.png' alt="Doctor Image">
+    </div>
+   
+    <div class="footer">
+        <p>&copy; 2024 Sam Hospital. All rights reserved.</p>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('login') }}">Doctor Login</a>
+        <a href="{{ url_for('book_appointment') }}">Book Appointment</a>
+        <a href="http://127.0.0.1:5000/sammyai">SammyAI</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Hospital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('/static/images/Login Background.jpg');
+            background-size:cover;
+            background-position:center;
+            background-attachment:fixed;
+            background-repeat: no-repeat;
+            position: relative;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            
+
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            max-width: 400px;
+            background-color: transparent;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            margin-bottom:70px;
+            color:black;
+        }
+        input {
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #3498db;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+        }
+
+        a:active {
+            background-color: #1c5980;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            a {
+                padding: 8px 16px;
+            }
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            position: absolute; /* Position it absolutely */
+            top: 10px; /* Adjust the distance from the top */
+            left: 0; /* Align it to the left */
+            width: 100%; /* Full width */
+            background-color: transparent; /* Remove the background color */
+            display: flex; /* Flexbox for alignment */
+            justify-content: center; /* Center items horizontally */
+            padding: 10px 0; /* Padding around the navbar items */
+            box-shadow: none; /* Remove shadow */
+            z-index: 10; /* Ensure it stays on top */
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff; /* White color for navbar links */
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px; /* Space between navbar links */
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Slightly white background on hover */
+            color: #fff; /* Keep text color white */
+        }
+
+        .navbar a:active {
+            background-color: rgba(255, 255, 255, 0.3); /* Slightly darker background on active */
+            color: #fff; /* Keep text color white */
+        }
+    
+    .footer {
+        background-color: #3498db;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        margin-bottom:10px;
+    }
+
+    .footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+    .loginlogo{
+        width: 110px; /* Set width to a smaller size */
+        height: auto; /* Maintain aspect ratio */
+        display: block;
+
+    }
+
+    .logo {
+        position: absolute; /* Position it absolutely */
+        top: 7px; /* Adjust the distance from the top */
+        left: 7px; /* Adjust the distance from the left */
+    }
+
+    .logo img {
+        width: 80px; /* Set width to a smaller size */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove any extra space below the image */
+    }
+
+    .fill{
+        border-color:black;
+    }
+    
+    
+    
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="http://127.0.0.1:5000/">Home</a>
+        <a href="http://127.0.0.1:5000/aboutus">About Us</a>
+        <a href="http://127.0.0.1:5000/sammyai">SammyAI</a>
+    </div>
+
+    <div class='logo'>
+        <a href="http://127.0.0.1:5000/">
+        <img src="/static/images/Samlogo.png" alt="Sam Logo">
+        </a>
+    </div>
+
+
+    <form action="{{ url_for('login') }}" method="POST">
+        <h1>Doctor's LogIn</h1>
+        <img src='/static/images/LoginLgo.png' class="loginlogo">
+        <input type="email" name="email" placeholder="Email" required class='fill'><br>
+        <input type="password" name="password" placeholder="Password" required class='fill'>
+        <button type="submit">Login</button>
+    </form>
+
+    <div class="footer">
+        <p>&copy; 2024 Sam Hospital. All rights reserved.</p>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('login') }}">Doctor Login</a>
+        <a href="{{ url_for('book_appointment') }}">Book Appointment</a>
+        <a href="http://127.0.0.1:5000/sammyai">SammyAI</a>
+    </div>
+</body>
+</html>

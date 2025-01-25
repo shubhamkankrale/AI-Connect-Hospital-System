@@ -1,0 +1,133 @@
+Welcome to SammyAI Chatbot!
+
+- Hospital Name: Sam Hospital.
+- Owner : Sam Kankrale.
+
+1. Book an Appointment:
+   - To book an appointment, please provide your Name, Date of Birth (DOB), Gender, Mobile Number, WhatsApp Number, Email, and preferred Time Slot.
+   - An available doctor will be automatically assigned to you.
+
+2. Today's Available Doctors:
+   - Dr. Sam - General Physician
+   - Dr. Ram - Cardiologist
+
+
+3. Hospital Address:
+   - Sam Hospital, Main Street:Chatrapati Sambhaji Maharaj Circle, City:Kopargaon, State:Maharashtra, ZIP Code:423601
+   - Contact Number: 7517647979
+   - Email: contact@samhospital.com
+
+4. Hospital Achievements:
+   - Over 100,000+ people treated successfully.
+   - State-of-the-art facilities and highly experienced medical staff.
+   - Awarded Best Hospital in the City for three consecutive years.
+
+5. Services Offered:
+   - General Medicine
+   - Pediatrics
+   - Cardiology
+   - Dermatology
+   - Orthopedic Surgery
+   - Emergency Services
+   - Laboratory Services
+   - Radiology Services
+
+6. Emergency Contact Information:
+   - In case of emergency, please contact our emergency hotline: 7517647979
+
+7. Health Tips:
+   - Maintain a balanced diet and stay hydrated.
+   - Exercise regularly.
+   - Get regular health check-ups.
+   - Follow COVID-19 safety guidelines.
+
+8. Insurance and Billing Information:
+   - We accept major health insurance plans.
+   - We accept bill with cards also like Credit card, Debit Card, UPI Payments, Other Online Payments accepted.
+   - For billing inquiries, please contact our billing department at 7517647979 or billing@samhospital.com
+
+9. Visiting Hours:
+   - General visiting hours: 10:00 AM - 6:00 PM
+   - ICU visiting hours: 4:00 PM - 5:00 PM
+
+10. Testimonials:
+   - "Sam Hospital provided excellent care during my surgery. Highly recommend!" - Patient John Markov
+   - "The doctors and staff are very professional and caring." - Patient Sanjivni Patil
+   - "Great experience from start to finish. Thank you, ABC Hospital!" - Patient Mrs. Kankrale
+
+11. Departments:
+   - General Medicine
+   - Pediatrics
+   - Cardiology
+   - Dermatology
+   - Orthopedic Surgery
+   - Neurology
+   - Gastroenterology
+   - Oncology
+   - Urology
+   - ENT (Ear, Nose, Throat)
+   - Ophthalmology
+   - Psychiatry
+
+12. Specialist Services:
+   - Dialysis
+   - Physiotherapy
+   - Rehabilitation Services
+   - Nutrition and Dietetics
+   - Palliative Care
+
+13. Facilities:
+   - 24/7 Emergency Department
+   - Intensive Care Units (ICU)
+   - Operation Theaters
+   - Maternity Ward
+   - Neonatal Intensive Care Unit (NICU)
+   - Advanced Imaging and Radiology
+   - Pharmacy
+   - Cafeteria
+   - Parking
+
+14. Contact Information for Various Departments:
+   - General Inquiries: +1 (123) 456-7890
+   - Emergency Services: +1 (123) 456-7899
+   - Appointment Booking: +1 (123) 456-7892
+   - Billing Department: +1 (123) 456-7891
+   - Email: contact@Samhospital.com
+
+15. Appointment Cancellation and Rescheduling:
+   - To cancel or reschedule an appointment, please call +917517647979 or email appointments@Samhospital.com.
+   - Please note our policy regarding last-minute cancellations and no-shows.
+
+16. Pharmacy Services:
+   - Pharmacy hours of operation: 8:00 AM - 8:00 PM
+   - Prescription refill requests can be made online or by calling +1 (123) 456-7893.
+   - Home delivery services are available for medications.
+
+17. Medical Records:
+   - To request copies of your medical records, please contact the medical records department at +1 (123) 456-7894 or records@Samhospital.com.
+   - Processing time for record requests is typically 5-7 business days.
+
+18. Visitor Guidelines:
+   - Visitors are welcome to bring gifts; however, please check with the nursing staff for any restrictions.
+   - Food restrictions may apply based on patient conditions.
+   - Special guidelines for visiting patients in the ICU or with infectious diseases will be provided by the nursing staff.
+
+19. Patient Rights and Responsibilities:
+   - You have the right to receive respectful and compassionate care.
+   - You are responsible for providing accurate health information and following your treatment plan.
+
+20. Support Services:
+   - Social work and counseling services are available for patients and families.
+   - Spiritual care services can be arranged upon request.
+   - Support groups for various conditions are held regularly. Please ask for more details.
+
+21. Health and Wellness Programs:
+   - Community outreach programs include health fairs, vaccination drives, and free screening events.
+   - We offer classes and workshops on topics such as diabetes management, healthy eating, and smoking cessation.
+   - Preventive care services include routine check-ups, vaccinations, and health screenings.
+
+22. Technology and Innovations:
+   - We are equipped with the latest medical technologies and treatments.
+   - Information on current clinical trials and research studies can be provided by our research department.
+
+If you need further assistance, please let me know!
