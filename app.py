@@ -75,7 +75,7 @@ def chatbot():
         user= f"User Query: {query}, Relevant Information: {context}\n\nPlease answer the user's query based only on the relevant information provided above."
         
         # Initialize the client with the API key
-        client = Groq(api_key="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")
+        client = Groq(api_key="YOUR API KEY")
 
         chat_completion = client.chat.completions.create(
             messages=[
